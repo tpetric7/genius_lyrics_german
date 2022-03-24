@@ -1,7 +1,7 @@
 ---
-title: 'Tut2: FAZ feuilleton pop crawling and scaping'
-author: "Niekler, Wiedemann, modified by: Teodor Petrič"
-date: "2020-01-10 (update: 'r Sys.Date()')"
+title: 'Scaping song lyrics from Genius'
+author: "Teodor Petrič"
+date: "2022-03-11 (update: 'r Sys.Date()')"
 output: html_document
 ---
 
@@ -9,22 +9,16 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r klippy, echo=FALSE, include=TRUE}
-klippy::klippy()
-```
+The workflow of this tutorial has been adapted from *Niekler & Wiedemann*'s tutorial on scraping newspaper articles. 
+
 This tutorial covers how to extract and process text data from web pages or other documents for later analysis.
-The automated download of HTML pages is called **Crawling**. The extraction of the textual data and/or metadata (for example, article date, headlines, author names, article text) from the HTML source code (or the DOM document object model of the website) is called **Scraping**. For these tasks, we use the package "rvest".
-In a third exercise, we will extract text data from various formats such as PDF, DOC, DOCX and TXT files with the "readtext" package.
+
+The automated download of HTML pages is called **Crawling**. The extraction of the textual data and/or metadata (for example, article date, headlines, author names, article text) from the HTML source code (or the DOM document object model of the website) is called **Scraping**. For these tasks, we use the package `rvest`.
 
 1. Download a single web page and extract its content
-2. Extract links from a overview page and extract articles
-3. Extract text data from PDF and other formats on disk
+2. Extract links from a overview page and extract song lyrics
 
 ## Preparation
-
-Create a new R script (File -> New File -> R Script) named "Tutorial_2.R". In this script you will enter and execute all commands. If you want to run the complete script in RStudio, you can use Ctrl-A to select the complete source code and execute with Ctrl-Return. If you want to execute only one line, you can simply press Ctrl-Return on the respective line. If you want to execute a block of several lines, select the block and press Ctrl-Return.
-
-Tip: Copy individual sections of the source code directly into the console (2) and run it step by step. Get familiar with the function calls included in the Help function.
 
 First, make sure your working directory is the data directory we provided for the exercises.
 
