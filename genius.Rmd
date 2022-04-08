@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-The workflow of this tutorial has been adapted from *Niekler & Wiedemann*'s tutorial on scraping newspaper articles. 
+The workflow of this tutorial has been adapted from [*Niekler & Wiedemann*](https://github.com/tm4ss/tm4ss.github.io)'s tutorial on [scraping newspaper articles](https://github.com/tm4ss/tm4ss.github.io/blob/master/Tutorial_1_Web_scraping.Rmd) and modified to scrape the lyrics of selected songs or albums from the [Genius](https://genius.com/) portal. Our goal is to use the resulting collection of song lyrics for linguistic study. 
 
 This tutorial covers how to extract and process text data from web pages or other documents for later analysis.
 
