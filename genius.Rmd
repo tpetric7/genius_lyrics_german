@@ -66,6 +66,8 @@ The following xpath expression queries for first-order-headline elements `h1`, a
 
 The next expression uses R pipe operator %>%, which takes the input from the left side of the expression and passes it on to the function ion the right side as its first argument. The result of this function is either passed onto the next function, again via %>% or it is assigned to the variable, if it is the last operation in the pipe chain. Our pipe takes the `html_document` object, passes it to the html_node function, which extracts the first node fitting the given xpath expression. The resulting node object is passed to the `html_text` function which extracts the text wrapped in the `h1`-element.
 
+Instead of XPATH-expressions used in *Niekler & Wiedemann*'s tutorial, we will be using css style expressions (easier to read and write).
+
 Name of author:
 
 ```{r}
@@ -93,7 +95,7 @@ cat(title_text)
 ```{r}
 sub_title_xpath <- "h2"
 sub_title_text <- html_document %>%
-  html_node(variant_title_xpath) %>%
+  html_node(sub_title_xpath) %>%
   html_text(trim = T)
 
 cat(sub_title_text)
@@ -177,6 +179,8 @@ album_name <- "A-night-at-the-opera"
 album_name <- "A-day-at-the-races"
 ```
 
+Or: 
+
 ```{r}
 artist_name <- "Capital-bra"
 
@@ -191,6 +195,7 @@ album_name <- "CB7"
 album_name <- "8"
 ```
 
+Or: 
 
 ```{r}
 artist_name <- "Bushido"
@@ -219,6 +224,25 @@ album_name <- "Zeiten-andern-dich"
 album_name <- "Deutschland-gib-mir-ein-mic"
 # ...
 
+```
+
+Or: 
+
+```{r}
+artist_name <- "Rammstein"
+album_name <- "Rammstein"
+```
+
+Or: 
+
+```{r}
+artist_name <- "Udo-lindenberg"
+album_name <- "Starker-als-die-zeit"
+```
+
+The last mentioned album of the last mentioned artist will be scraped and downloaded. 
+
+```{r}
 url <- paste0("https://genius.com/albums/",artist_name,"/",album_name)
 
 html_document <- read_html(url)
