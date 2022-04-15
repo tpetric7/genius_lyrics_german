@@ -172,12 +172,17 @@ require(rvest)
 
 Usually, we do not want download a single document, but a series of documents. In our second exercise, we want to download all Spiegel articles tagged with "Angela Merkel". Instead of a tag page, we could also be interested in downloading results of a site-search engine or any other link collection. The task is always two-fold: First, we download and parse the tag overview page to extract all links to articles of interest: 
 
+### English Rock
+
 ```{r}
 artist_name <- "Queen"
 
 album_name <- "A-night-at-the-opera"
 album_name <- "A-day-at-the-races"
 ```
+
+
+### German Rap
 
 Or: 
 
@@ -229,16 +234,119 @@ album_name <- "Deutschland-gib-mir-ein-mic"
 Or: 
 
 ```{r}
-artist_name <- "Rammstein"
-album_name <- "Rammstein"
+artist_name <- "Kollegah"
+album_name <- "Hoodtape-volume-2"
 ```
 
 Or: 
 
 ```{r}
-artist_name <- "Udo-lindenberg"
-album_name <- "Starker-als-die-zeit"
+artist_name <- "Alligatoah"
+album_name <- "In-gottes-namen"
 ```
+
+```{r}
+artist_name <- "Samy-deluxe"
+album_name <- "Samtv-unplugged"
+```
+
+
+
+### German Rock
+
+Or: 
+
+```{r}
+artist_name <- "Udo-lindenberg"
+album_name <- "Starker-als-die-zeit" # 2016
+album_name <- "Radio-eriwahn-prasentiert-udo-lindenberg-panikorchester" # 1985
+album_name <- "Bunte-republik-deutschland" # 1989
+album_name <- "Panische-zeiten" # 1980
+album_name <- "Odyssee" # 1983
+album_name <- "Udopia" # 1981
+album_name <- "Gotterhammerung" # 1984
+album_name <- "Wendezeiten" # 1990
+album_name <- "Alles-klar-auf-der-andrea-doria" # 1973
+album_name <- "Hermine" # 1988
+album_name <- "Feuerland" # 1987
+album_name <- "Wo-ich-meinen-hut-hinhang" # 1999
+album_name <- "Totales-paradies" # 2000
+album_name <- "Club-der-millionare" # 1998
+album_name <- "Phonix" # 1986
+album_name <- "Casanova" # 1988
+album_name <- "Ich-will-dich-haben" # 1991
+album_name <- "Benjamin" # 1993
+album_name <- "Belcanto" # 1997
+```
+
+Or: 
+
+```{r}
+artist_name <- "Rammstein"
+album_name <- "Rammstein" # 2019
+album_name <- "Made-in-germany-1995-2011" # 2011
+album_name <- "Volkerball" # 2006
+album_name <- "Sehnsucht" # 1997
+album_name <- "Mutter" # 2001
+album_name <- "Reise-reise" # 2004
+album_name <- "Liebe-ist-fur-alle-da" # 2009
+album_name <- "Rosenrot" # 2005
+album_name <- "Herzeleid" # 1995
+album_name <- "Xxi-raritaten" # 2015
+album_name <- "Zeit" # 2022
+album_name <- "Raritaten-1994-2012" # 2015
+album_name <- "Ich-tu-dir-weh-ep" # 2010
+album_name <- "Mein-land-ep" # 2011
+album_name <- "Live-aus-Berlin" # 1999
+album_name <- "Auslander-single" # 2019
+
+```
+
+Or:
+
+```{r}
+artist_name <- "die-arzte"
+album_name <- "zu-schon-um-wahr-zu-sein" # 1983
+album_name <- "Uns-gehts-prima" # 1984
+album_name <- "Debil" # 1984
+album_name <- "Im-schatten-der-arzte" # 1985
+album_name <- "Die-arzte" # 1986
+album_name <- "Ab-18" # 1987
+album_name <- "Das-ist-nicht-die-ganze-wahrheit" # 1988
+album_name <- "Nach-uns-die-Sintflut-live" # 1988
+album_name <- "Die-arzte-fruher" # 1989
+album_name <- "Die-bestie-in-menschengestalt" # 1993
+album_name <- "Ab-23-mixe-b-seiten-und-anderer-unveroffentlichter-mull" # 1994
+album_name <- "Quark-single" # 1994
+album_name <- "Das-beste-von-kurz-nach-fruher-bis-jetze" # 1994
+album_name <- "1-2-3-4-bullenstaat" # 1995
+album_name <- "Planet-punk" # 1995
+album_name <- "Ganz-fruher-und-ganz-neu" # 1996
+album_name <- "Doktorspiele-heute-heute-bis-kurz-davor" # 1996
+album_name <- "Doktorspiele-unzensiert-jetzt-erst-recht" # 1996
+album_name <- "Rockgiganten-vs-strassenkoter" # 1996
+album_name <- "Ein-schwein-namens-manner-single" # 1998
+album_name <- "Ab-80-alles-uber-sex" # 1998
+album_name <- "13" # 1998
+album_name <- "Kindertage" # 1999
+album_name <- "Satanische-pferde" # 1999
+album_name <- "Runter-mit-den-spendierhosen-unsichtbarer" # 2000
+album_name <- "5-6-7-8-bullenstaat" # 2001
+album_name <- "Rock-n-roll-realschule" # 2002
+album_name <- "Gerausch" # 2003
+album_name <- "Jazz-ist-anders" # 2007
+album_name <- "Auch" # 2012
+album_name <- "Die-nacht-der-damonen-live" # 2013
+album_name <- "Hell" # 2020
+album_name <- "Ich-am-strand" # 2020
+album_name <- "Achtung-bielefeld" # 2021
+album_name <- "Abends-billy" # 2021
+album_name <- "Dunkel" # 2021
+album_name <- "Abends-skanken" # 2021
+album_name <- "They-ve-given-me-schrott-die-outtakes" # 2019
+
+```
+
 
 The last mentioned album of the last mentioned artist will be scraped and downloaded. 
 
