@@ -1,0 +1,63 @@
+---
+title: "Render_scraping"
+author: "Teodor Petrič"
+date: "2022-04-15"
+# output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+https://bookdown.org/yihui/rmarkdown-cookbook/parameterized-reports.html
+https://docs.rstudio.com/connect/1.7.4/user/param-rmarkdown.html
+https://zsmith27.github.io/rmarkdown_crash-course/lesson-7-parameterized-reports.html
+https://stackoverflow.com/questions/68469470/render-reports-in-r-markdown
+
+## artists
+
+```{r}
+artist_name <- c("Bushido", "Capital-bra")
+
+```
+
+## albums
+
+```{r}
+album_name <- c('Sonny-black', 'Sonny-black-II', '7', 'Bushido', 'Mythos', 'Von-der-skyline-zum-bordstein-zuruck', 'Staatsfeind-nr-1', 'Electro-ghetto', 'Black-friday', 'Heavy-Metal-Payback', 'Carlo-cokxxx-nutten-4', 'King-of-kingz', 'Vom-Bordstein-bis-zur-Skyline', 'Demotape', 'Carlo-cokxxx-nutten', 'Amyf', 'Carlo-cokxxx-nutten-3', 'Jenseits-von-gut-und-bose', 'Zeiten-andern-dich', 'Deutschland-gib-mir-ein-mic', 'Makarov-komplex', 'Kuku-bra')
+```
+
+```{r}
+album_name <- c('Amyf', 'Carlo-cokxxx-nutten-3', 'Jenseits-von-gut-und-bose', 'Zeiten-andern-dich', 'Deutschland-gib-mir-ein-mic', 'Makarov-komplex', 'Kuku-bra')
+```
+
+```{r}
+# album_name <- c('Carlo-cokxxx-nutten')
+```
+
+
+## artist + album
+
+```{r eval=FALSE, include=FALSE}
+render_one <- function(artist_name, album_name) {
+  # assuming the output format of input.Rmd is rds
+  rmarkdown::render(
+    'genius_auto.Rmd',
+    # output_file = paste0(
+    #   "data/", artist_name, "_", album_name, '.rds'),
+    params = list(artist_name = artist_name, album_name = album_name),
+    envir = parent.frame()
+  )
+}
+```
+
+## loop rendering
+
+```{r eval=FALSE, include=FALSE}
+for (artist in artist_name) {
+  for (album in album_name) {
+    render_one(artist, album)
+  }
+}
+```
+

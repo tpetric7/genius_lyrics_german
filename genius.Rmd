@@ -118,8 +118,9 @@ Now we modify the xpath expressions, to extract the article info, the paragraphs
 body_xpath <- ".jYfhrf"
 body_text <- html_document %>%
   html_nodes(body_xpath) %>%
-  html_text(trim = T) %>%
-  paste0(collapse = "\n")
+  # html_text(trim = T) %>% 
+  html_text2() %>%
+  paste(collapse = "\n")
 
 cat(body_text)
 
@@ -455,7 +456,8 @@ scrape_genius_album <- function(url) {
   
   body_text <- html_document %>%
     html_nodes(body_xpath) %>%
-    html_text(trim = T) %>%
+    # html_text(trim = T) %>%
+    html_text2() %>% # preserves verse form
     paste0(collapse = "\n")
   
   album_lyrics <- data.frame(
