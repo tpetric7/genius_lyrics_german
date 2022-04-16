@@ -41,38 +41,6 @@ params:
 
 ---
 
-```{r}
-# string <- c("    - Sonny-black
-#     - Sonny-black-II
-#     - 7
-#     - Bushido
-#     - Mythos
-#     - Von-der-skyline-zum-bordstein-zuruck
-#     - Staatsfeind-nr-1
-#     - Electro-ghetto
-#     - Black-friday
-#     - Heavy-Metal-Payback
-#     - Carlo-cokxxx-nutten-4
-#     - King-of-kingz
-#     - Vom-Bordstein-bis-zur-Skyline
-#     - Demotape
-#     - Carlo-cokxxx-nutten
-#     - Amyf
-#     - Carlo-cokxxx-nutten-3
-#     - Jenseits-von-gut-und-bose
-#     - Zeiten-andern-dich
-#     - Deutschland-gib-mir-ein-mic
-#     - Makarov-komplex
-#     - Kuku-bra")
-# 
-# strings <- string %>% 
-#   str_replace_all("    - ", ",") %>% 
-#   str_replace_all(",", "'") %>% 
-#   str_replace_all("\n'", "', '")
-# 
-# cat(strings)
-```
-
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)

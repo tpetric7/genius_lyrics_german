@@ -369,38 +369,9 @@ pre code {
 </div>
 
 
-<pre class="r"><code># string &lt;- c(&quot;    - Sonny-black
-#     - Sonny-black-II
-#     - 7
-#     - Bushido
-#     - Mythos
-#     - Von-der-skyline-zum-bordstein-zuruck
-#     - Staatsfeind-nr-1
-#     - Electro-ghetto
-#     - Black-friday
-#     - Heavy-Metal-Payback
-#     - Carlo-cokxxx-nutten-4
-#     - King-of-kingz
-#     - Vom-Bordstein-bis-zur-Skyline
-#     - Demotape
-#     - Carlo-cokxxx-nutten
-#     - Amyf
-#     - Carlo-cokxxx-nutten-3
-#     - Jenseits-von-gut-und-bose
-#     - Zeiten-andern-dich
-#     - Deutschland-gib-mir-ein-mic
-#     - Makarov-komplex
-#     - Kuku-bra&quot;)
-# 
-# strings &lt;- string %&gt;% 
-#   str_replace_all(&quot;    - &quot;, &quot;,&quot;) %&gt;% 
-#   str_replace_all(&quot;,&quot;, &quot;&#39;&quot;) %&gt;% 
-#   str_replace_all(&quot;\n&#39;&quot;, &quot;&#39;, &#39;&quot;)
-# 
-# cat(strings)</code></pre>
 <p>Artist name (<em>yaml</em> header):</p>
-<pre><code>## [1] &quot;Bushido&quot;</code></pre>
-<pre><code>## [1] &quot;Deutschland-gib-mir-ein-mic&quot;</code></pre>
+<pre><code>## [1] &quot;Samy-deluxe&quot;</code></pre>
+<pre><code>## [1] &quot;Samtv-unplugged&quot;</code></pre>
 <div id="follow-links" class="section level2">
 <h2>Follow links</h2>
 <pre class="r"><code>options(stringsAsFactors = F)
@@ -412,86 +383,74 @@ html_document &lt;- read_html(url)
 html_document</code></pre>
 <pre><code>## {html_document}
 ## &lt;html class=&quot;snarly song_stories_public_launch--enabled react_forums--disabled report_abuse--disabled&quot; xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xmlns:fb=&quot;http://www.facebook.com/2008/fbml&quot; lang=&quot;en&quot; xml:lang=&quot;en&quot;&gt;
-## [1] &lt;head&gt;\n&lt;base target=&quot;_top&quot; href=&quot;//genius.com/&quot;&gt;\n&lt;script t ...
-## [2] &lt;body class=&quot;act-show cont-albums snarly&quot; handle-routable-li ...</code></pre>
+## [1] &lt;head&gt;\n&lt;base target=&quot;_top&quot; href=&quot;//genius.com/&quot;&gt;\n&lt;script  ...
+## [2] &lt;body class=&quot;act-show cont-albums snarly&quot; handle-routable-l ...</code></pre>
 <pre class="r"><code>meta_xpath &lt;- &quot;div.metadata_unit&quot;
 meta_text &lt;- html_document %&gt;%
   html_nodes(meta_xpath) %&gt;%
   html_text(trim = T) %&gt;%
   paste0(collapse = &quot;\n&quot;)
 cat(meta_text)</code></pre>
-<pre><code>## Released April 28, 2006
-## Label
-## 
-##     
-##       Universal Music Group &amp; ersguterjunge
+<pre><code>## Released August 31, 2018
 ## Featuring
 ## 
 ##     
-##       Baba Saad
+##       Afrob (DEU), Alex Prince, ASD &amp; 30 more
 ## Producers
 ## 
 ##     
-##       Bushido
+##       DLX Ensemble, Nena, Paul’s Boutique &amp; 2 more
 ## Writers
 ## 
 ##     
-##       Baba Saad, Bushido, Chakuza &amp; 4 more
-## Additional Vocals
+##       Afrob (DEU), Bengio, Chefket &amp; 30 more
+## Make Up
 ## 
 ##     
-##       Baba Saad &amp; Stickle
-## Bass
+##       Milla De Wet
+## Members
 ## 
 ##     
-##       Markus Runzheimer</code></pre>
+##       Afrob (DEU) &amp; Samy Deluxe</code></pre>
 <pre class="r"><code>links &lt;- html_document %&gt;%
   html_nodes(&quot;a.u-display_block&quot;) %&gt;%
   html_attr(name = &quot;href&quot;)
 links</code></pre>
-<pre><code>##  [1] &quot;https://genius.com/Bushido-intro-deutschland-gib-mir-ein-mic-lyrics&quot;
-##  [2] &quot;https://genius.com/Bushido-endgegner-live-lyrics&quot;                   
-##  [3] &quot;https://genius.com/Bushido-skit-1-live-lyrics&quot;                      
-##  [4] &quot;https://genius.com/Bushido-staatsfeind-nr-1-live-lyrics&quot;            
-##  [5] &quot;https://genius.com/Bushido-skit-2-live-lyrics&quot;                      
-##  [6] &quot;https://genius.com/Bushido-ab-18-live-lyrics&quot;                       
-##  [7] &quot;https://genius.com/Bushido-skit-3-live-lyrics&quot;                      
-##  [8] &quot;https://genius.com/Bushido-ersguterjunge-live-lyrics&quot;               
-##  [9] &quot;https://genius.com/Bushido-skit-4-live-lyrics&quot;                      
-## [10] &quot;https://genius.com/Bushido-ghettorap-hin-ghettorap-her-live-lyrics&quot; 
-## [11] &quot;https://genius.com/Bushido-fickdeinemutterslang-live-lyrics&quot;        
-## [12] &quot;https://genius.com/Bushido-denk-an-mich-live-lyrics&quot;                
-## [13] &quot;https://genius.com/Bushido-skit-5-live-lyrics&quot;                      
-## [14] &quot;https://genius.com/Bushido-augenblick-live-lyrics&quot;                  
-## [15] &quot;https://genius.com/Bushido-skit-6-live-lyrics&quot;                      
-## [16] &quot;https://genius.com/Bushido-electrofaust-live-lyrics&quot;                
-## [17] &quot;https://genius.com/Bushido-typisch-ich-live-lyrics&quot;                 
-## [18] &quot;https://genius.com/Bushido-hymne-der-strae-live-lyrics&quot;             
-## [19] &quot;https://genius.com/Bushido-skit-7-live-lyrics&quot;                      
-## [20] &quot;https://genius.com/Bushido-traume-im-dunkeln-live-lyrics&quot;           
-## [21] &quot;https://genius.com/Bushido-sieh-in-meine-augen-live-lyrics&quot;         
-## [22] &quot;https://genius.com/Bushido-skit-8-live-lyrics&quot;                      
-## [23] &quot;https://genius.com/Bushido-berlin-live-lyrics&quot;                      
-## [24] &quot;https://genius.com/Bushido-nie-wieder-live-lyrics&quot;                  
-## [25] &quot;https://genius.com/Bushido-skit-9-live-lyrics&quot;                      
-## [26] &quot;https://genius.com/Bushido-skit-10-live-lyrics&quot;                     
-## [27] &quot;https://genius.com/Bushido-wenn-wir-kommen-live-lyrics&quot;             
-## [28] &quot;https://genius.com/Bushido-gemein-wie-10-live-lyrics&quot;               
-## [29] &quot;https://genius.com/Bushido-skit-11-live-lyrics&quot;                     
-## [30] &quot;https://genius.com/Bushido-der-sandmann-live-lyrics&quot;                
-## [31] &quot;https://genius.com/Bushido-skit-12-live-lyrics&quot;                     
-## [32] &quot;https://genius.com/Bushido-mein-leben-lang-live-lyrics&quot;             
-## [33] &quot;https://genius.com/Bushido-skit-13-live-lyrics&quot;                     
-## [34] &quot;https://genius.com/Bushido-nie-ein-rapper-live-lyrics&quot;              
-## [35] &quot;https://genius.com/Bushido-skit-14-live-lyrics&quot;                     
-## [36] &quot;https://genius.com/Bushido-cordon-sport-massenmord-live-lyrics&quot;     
-## [37] &quot;https://genius.com/Bushido-bei-nacht-live-lyrics&quot;                   
-## [38] &quot;https://genius.com/Bushido-skit-15-live-lyrics&quot;                     
-## [39] &quot;https://genius.com/Bushido-besoffene-kinder-live-lyrics&quot;            
-## [40] &quot;https://genius.com/Bushido-gemein-wie-100-live-lyrics&quot;              
-## [41] &quot;https://genius.com/Bushido-skit-16-live-lyrics&quot;                     
-## [42] &quot;https://genius.com/Bushido-outro-live-lyrics&quot;                       
-## [43] &quot;https://genius.com/Bushido-berlin-denk-an-mich-live-lyrics&quot;</code></pre>
+<pre><code>##  [1] &quot;https://genius.com/Samy-deluxe-flagge-hissen-anker-lichten-samtv-unplugged-lyrics&quot;   
+##  [2] &quot;https://genius.com/Samy-deluxe-der-guteste-samtv-unplugged-lyrics&quot;                   
+##  [3] &quot;https://genius.com/Samy-deluxe-dreist-samtv-unplugged-lyrics&quot;                        
+##  [4] &quot;https://genius.com/Samy-deluxe-pures-gift-wie-jetzt-samtv-unplugged-lyrics&quot;          
+##  [5] &quot;https://genius.com/Samy-deluxe-ladies-and-gentleman-2018-samtv-unplugged-lyrics&quot;     
+##  [6] &quot;https://genius.com/Samy-deluxe-wer-ich-bin-samtv-unplugged-lyrics&quot;                   
+##  [7] &quot;https://genius.com/Samy-deluxe-mein-flow-is-samtv-unplugged-lyrics&quot;                  
+##  [8] &quot;https://genius.com/Samy-deluxe-manuskript-samtv-unplugged-lyrics&quot;                    
+##  [9] &quot;https://genius.com/Samy-deluxe-malaria-samtv-unplugged-lyrics&quot;                       
+## [10] &quot;https://genius.com/Samy-deluxe-zuruck-zu-wir-samtv-unplugged-lyrics&quot;                 
+## [11] &quot;https://genius.com/Samy-deluxe-ego-samtv-unplugged-lyrics&quot;                           
+## [12] &quot;https://genius.com/Samy-deluxe-lots-of-signs-samtv-unplugged-lyrics&quot;                 
+## [13] &quot;https://genius.com/Samy-deluxe-musik-um-durch-den-tag-zu-komm-samtv-unplugged-lyrics&quot;
+## [14] &quot;https://genius.com/Samy-deluxe-exodus-samtv-unplugged-lyrics&quot;                        
+## [15] &quot;https://genius.com/Samy-deluxe-champions-samtv-unplugged-lyrics&quot;                     
+## [16] &quot;https://genius.com/Samy-deluxe-tortellini-riddim-samtv-unplugged-lyrics&quot;             
+## [17] &quot;https://genius.com/Samy-deluxe-hey-du-nimm-dir-zeit-samtv-unplugged-lyrics&quot;          
+## [18] &quot;https://genius.com/Samy-deluxe-antihaltung-samtv-unplugged-lyrics&quot;                   
+## [19] &quot;https://genius.com/Samy-deluxe-superheld-samtv-unplugged-lyrics&quot;                     
+## [20] &quot;https://genius.com/Samy-deluxe-von-dir-mama-samtv-unplugged-lyrics&quot;                  
+## [21] &quot;https://genius.com/Samy-deluxe-eines-tages-samtv-unplugged-lyrics&quot;                   
+## [22] &quot;https://genius.com/Samy-deluxe-poesie-album-samtv-unplugged-lyrics&quot;                  
+## [23] &quot;https://genius.com/Samy-deluxe-haus-am-mehr-samtv-unplugged-lyrics&quot;                  
+## [24] &quot;https://genius.com/Samy-deluxe-hande-hoch-2018-samtv-unplugged-lyrics&quot;               
+## [25] &quot;https://genius.com/Samy-deluxe-mimimi-takeover-samtv-unplugged-lyrics&quot;               
+## [26] &quot;https://genius.com/Samy-deluxe-chefket-skit-lyrics&quot;                                  
+## [27] &quot;https://genius.com/Samy-deluxe-adriano-samtv-unplugged-lyrics&quot;                       
+## [28] &quot;https://genius.com/Samy-deluxe-weck-mich-auf-samtv-unplugged-lyrics&quot;                 
+## [29] &quot;https://genius.com/Samy-deluxe-fuchse-samtv-unplugged-lyrics&quot;                        
+## [30] &quot;https://genius.com/Samy-deluxe-grune-brille-samtv-unplugged-lyrics&quot;                  
+## [31] &quot;https://genius.com/Samy-deluxe-bisschen-mein-ding-samtv-unplugged-lyrics&quot;            
+## [32] &quot;https://genius.com/Samy-deluxe-fantasie-pt-1-samtv-unplugged-lyrics&quot;                 
+## [33] &quot;https://genius.com/Samy-deluxe-blindenschrift-samtv-unplugged-lyrics&quot;                
+## [34] &quot;https://genius.com/Samy-deluxe-sneak-preview-samtv-unplugged-lyrics&quot;                 
+## [35] &quot;https://genius.com/Samy-deluxe-unplugged-cypher-dlx-lyrics&quot;</code></pre>
 </div>
 <div id="pages" class="section level2">
 <h2>Pages</h2>
@@ -503,7 +462,7 @@ links</code></pre>
 paging_urls &lt;- url
 
 head(paging_urls, 3)</code></pre>
-<pre><code>## [1] &quot;https://genius.com/albums/Bushido/Deutschland-gib-mir-ein-mic&quot;</code></pre>
+<pre><code>## [1] &quot;https://genius.com/albums/Samy-deluxe/Samtv-unplugged&quot;</code></pre>
 </div>
 <div id="collect-links" class="section level2">
 <h2>Collect links</h2>
@@ -522,19 +481,19 @@ for (url in paging_urls) {
 }
 
 head(all_links)</code></pre>
-<pre><code>## [1] &quot;https://genius.com/Bushido-intro-deutschland-gib-mir-ein-mic-lyrics&quot;
-## [2] &quot;https://genius.com/Bushido-endgegner-live-lyrics&quot;                   
-## [3] &quot;https://genius.com/Bushido-skit-1-live-lyrics&quot;                      
-## [4] &quot;https://genius.com/Bushido-staatsfeind-nr-1-live-lyrics&quot;            
-## [5] &quot;https://genius.com/Bushido-skit-2-live-lyrics&quot;                      
-## [6] &quot;https://genius.com/Bushido-ab-18-live-lyrics&quot;</code></pre>
+<pre><code>## [1] &quot;https://genius.com/Samy-deluxe-flagge-hissen-anker-lichten-samtv-unplugged-lyrics&quot;
+## [2] &quot;https://genius.com/Samy-deluxe-der-guteste-samtv-unplugged-lyrics&quot;                
+## [3] &quot;https://genius.com/Samy-deluxe-dreist-samtv-unplugged-lyrics&quot;                     
+## [4] &quot;https://genius.com/Samy-deluxe-pures-gift-wie-jetzt-samtv-unplugged-lyrics&quot;       
+## [5] &quot;https://genius.com/Samy-deluxe-ladies-and-gentleman-2018-samtv-unplugged-lyrics&quot;  
+## [6] &quot;https://genius.com/Samy-deluxe-wer-ich-bin-samtv-unplugged-lyrics&quot;</code></pre>
 <pre class="r"><code>tail(all_links)</code></pre>
-<pre><code>## [1] &quot;https://genius.com/Bushido-skit-15-live-lyrics&quot;            
-## [2] &quot;https://genius.com/Bushido-besoffene-kinder-live-lyrics&quot;   
-## [3] &quot;https://genius.com/Bushido-gemein-wie-100-live-lyrics&quot;     
-## [4] &quot;https://genius.com/Bushido-skit-16-live-lyrics&quot;            
-## [5] &quot;https://genius.com/Bushido-outro-live-lyrics&quot;              
-## [6] &quot;https://genius.com/Bushido-berlin-denk-an-mich-live-lyrics&quot;</code></pre>
+<pre><code>## [1] &quot;https://genius.com/Samy-deluxe-grune-brille-samtv-unplugged-lyrics&quot;      
+## [2] &quot;https://genius.com/Samy-deluxe-bisschen-mein-ding-samtv-unplugged-lyrics&quot;
+## [3] &quot;https://genius.com/Samy-deluxe-fantasie-pt-1-samtv-unplugged-lyrics&quot;     
+## [4] &quot;https://genius.com/Samy-deluxe-blindenschrift-samtv-unplugged-lyrics&quot;    
+## [5] &quot;https://genius.com/Samy-deluxe-sneak-preview-samtv-unplugged-lyrics&quot;     
+## [6] &quot;https://genius.com/Samy-deluxe-unplugged-cypher-dlx-lyrics&quot;</code></pre>
 </div>
 <div id="scrape-function" class="section level2">
 <h2>Scrape function</h2>
@@ -602,14 +561,47 @@ for (i in 1:length(all_links)){
   else {
     next}
 }</code></pre>
-<pre><code>## Downloading 1 of 43 URL: https://genius.com/Bushido-intro-deutschland-gib-mir-ein-mic-lyrics 
-## Downloading 43 of 43 URL: https://genius.com/Bushido-berlin-denk-an-mich-live-lyrics</code></pre>
+<pre><code>## Downloading 1 of 35 URL: https://genius.com/Samy-deluxe-flagge-hissen-anker-lichten-samtv-unplugged-lyrics 
+## Downloading 2 of 35 URL: https://genius.com/Samy-deluxe-der-guteste-samtv-unplugged-lyrics 
+## Downloading 3 of 35 URL: https://genius.com/Samy-deluxe-dreist-samtv-unplugged-lyrics 
+## Downloading 4 of 35 URL: https://genius.com/Samy-deluxe-pures-gift-wie-jetzt-samtv-unplugged-lyrics 
+## Downloading 5 of 35 URL: https://genius.com/Samy-deluxe-ladies-and-gentleman-2018-samtv-unplugged-lyrics 
+## Downloading 6 of 35 URL: https://genius.com/Samy-deluxe-wer-ich-bin-samtv-unplugged-lyrics 
+## Downloading 7 of 35 URL: https://genius.com/Samy-deluxe-mein-flow-is-samtv-unplugged-lyrics 
+## Downloading 8 of 35 URL: https://genius.com/Samy-deluxe-manuskript-samtv-unplugged-lyrics 
+## Downloading 9 of 35 URL: https://genius.com/Samy-deluxe-malaria-samtv-unplugged-lyrics 
+## Downloading 10 of 35 URL: https://genius.com/Samy-deluxe-zuruck-zu-wir-samtv-unplugged-lyrics 
+## Downloading 11 of 35 URL: https://genius.com/Samy-deluxe-ego-samtv-unplugged-lyrics 
+## Downloading 12 of 35 URL: https://genius.com/Samy-deluxe-lots-of-signs-samtv-unplugged-lyrics 
+## Downloading 13 of 35 URL: https://genius.com/Samy-deluxe-musik-um-durch-den-tag-zu-komm-samtv-unplugged-lyrics 
+## Downloading 14 of 35 URL: https://genius.com/Samy-deluxe-exodus-samtv-unplugged-lyrics 
+## Downloading 15 of 35 URL: https://genius.com/Samy-deluxe-champions-samtv-unplugged-lyrics 
+## Downloading 16 of 35 URL: https://genius.com/Samy-deluxe-tortellini-riddim-samtv-unplugged-lyrics 
+## Downloading 17 of 35 URL: https://genius.com/Samy-deluxe-hey-du-nimm-dir-zeit-samtv-unplugged-lyrics 
+## Downloading 18 of 35 URL: https://genius.com/Samy-deluxe-antihaltung-samtv-unplugged-lyrics 
+## Downloading 19 of 35 URL: https://genius.com/Samy-deluxe-superheld-samtv-unplugged-lyrics 
+## Downloading 20 of 35 URL: https://genius.com/Samy-deluxe-von-dir-mama-samtv-unplugged-lyrics 
+## Downloading 21 of 35 URL: https://genius.com/Samy-deluxe-eines-tages-samtv-unplugged-lyrics 
+## Downloading 22 of 35 URL: https://genius.com/Samy-deluxe-poesie-album-samtv-unplugged-lyrics 
+## Downloading 23 of 35 URL: https://genius.com/Samy-deluxe-haus-am-mehr-samtv-unplugged-lyrics 
+## Downloading 24 of 35 URL: https://genius.com/Samy-deluxe-hande-hoch-2018-samtv-unplugged-lyrics 
+## Downloading 25 of 35 URL: https://genius.com/Samy-deluxe-mimimi-takeover-samtv-unplugged-lyrics 
+## Downloading 26 of 35 URL: https://genius.com/Samy-deluxe-chefket-skit-lyrics 
+## Downloading 27 of 35 URL: https://genius.com/Samy-deluxe-adriano-samtv-unplugged-lyrics 
+## Downloading 28 of 35 URL: https://genius.com/Samy-deluxe-weck-mich-auf-samtv-unplugged-lyrics 
+## Downloading 29 of 35 URL: https://genius.com/Samy-deluxe-fuchse-samtv-unplugged-lyrics 
+## Downloading 30 of 35 URL: https://genius.com/Samy-deluxe-grune-brille-samtv-unplugged-lyrics 
+## Downloading 31 of 35 URL: https://genius.com/Samy-deluxe-bisschen-mein-ding-samtv-unplugged-lyrics 
+## Downloading 32 of 35 URL: https://genius.com/Samy-deluxe-fantasie-pt-1-samtv-unplugged-lyrics 
+## Downloading 33 of 35 URL: https://genius.com/Samy-deluxe-blindenschrift-samtv-unplugged-lyrics 
+## Downloading 34 of 35 URL: https://genius.com/Samy-deluxe-sneak-preview-samtv-unplugged-lyrics 
+## Downloading 35 of 35 URL: https://genius.com/Samy-deluxe-unplugged-cypher-dlx-lyrics</code></pre>
 <pre class="r"><code>finishtime &lt;- date()
 
 starttime</code></pre>
-<pre><code>## [1] &quot;Sat Apr 16 00:33:51 2022&quot;</code></pre>
+<pre><code>## [1] &quot;Sat Apr 16 22:54:52 2022&quot;</code></pre>
 <pre class="r"><code>finishtime</code></pre>
-<pre><code>## [1] &quot;Sat Apr 16 00:34:15 2022&quot;</code></pre>
+<pre><code>## [1] &quot;Sat Apr 16 22:55:53 2022&quot;</code></pre>
 <pre class="r"><code>all_lyrics &lt;- all_lyrics %&gt;% 
   mutate(album = case_when(
     album == &quot;&quot; | is.na(album) ~ album_name, 
