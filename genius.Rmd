@@ -49,6 +49,7 @@ url <- lyrics_url
 url <- "https://genius.com/Capital-bra-allein-lyrics"
 # url <- "https://genius.com/albums/Queen/A-night-at-the-opera"
 url <- "https://genius.com/Queen-bohemian-rhapsody-lyrics"
+url <- "https://genius.com/Freundeskreis-leg-dein-ohr-auf-die-schiene-der-geschichte-lyrics"
 require("rvest")
 ```
 
@@ -72,6 +73,7 @@ Name of author:
 
 ```{r}
 author_xpath <- "a.ayFeg"
+author_xpath <- "h2"
 author_text <- html_document %>%
   html_node(author_xpath) %>%
   html_text(trim = T)
@@ -185,6 +187,8 @@ album_name <- "A-day-at-the-races"
 
 ### German Rap
 
+https://www.dw.com/en/10-pioneers-of-german-hip-hop/g-18888518
+
 Or: 
 
 ```{r}
@@ -251,7 +255,382 @@ artist_name <- "Samy-deluxe"
 album_name <- "Samtv-unplugged"
 ```
 
+New Code 2022-07-19
 
+```{r}
+artist_name <- "Freundeskreis"
+album_name <- "Quadratur-des-kreises"
+album_name <- "Fk-10"
+album_name <- "Esperanto"
+```
+
+```{r}
+artist_name <- "Advanced-chemistry"
+album_name <- "Advanced-chemistry"
+```
+
+
+```{r}
+artist_name <- "Die-fantastischen-vier"
+album_name <- "Vier-und-jetzt-best-of-1990-2015"
+album_name <- "Captain-fantastic"
+album_name <- "Unplugged"
+album_name <- "4-gewinnt"
+album_name <- "4-99"
+album_name <- "Lauschgift"
+album_name <- "Live-und-direkt"
+album_name <- "Rekord"
+album_name <- "Viel"
+album_name <- "Fornika"
+album_name <- "Fur-dich-immer-noch-fanta-sie"
+album_name <- "Die-4-dimension"
+album_name <- "Jetzt-gehts-ab"
+album_name <- "Supersense-block-party"
+album_name <- "Original-album-classics"
+```
+
+```{r}
+artist_name <- "Cora-e"
+album_name <- "Corage"
+album_name <- "Und-der-mc-ist-weiblich"
+
+```
+
+```{r}
+artist_name <- "Beginner"
+album_name <- "Advanced-chemistry"
+album_name <- "Blast-action-heroes-v2-0"
+album_name <- "The-early-years-1992-1994"
+album_name <- "Morgen-freeman-single"
+album_name <- "Blast-action-heroes"
+album_name <- "Bambule-remixed"
+album_name <- "Fuchse-k-zwo"
+album_name <- "Bambule"
+album_name <- "Flashnizm-stylopath"
+album_name <- "Ill-styles"
+album_name <- "Gotting"
+
+```
+
+```{r}
+artist_name <- "Mc-rene"
+album_name <- "Irgendwas-stimmt"
+album_name <- "Master-of-ceremony"
+album_name <- "Khazraje"
+album_name <- "Renessance"
+album_name <- "Alles-auf-eine-karte"
+album_name <- "Flowdiamonds-freestyle-tape"
+album_name <- "Scheiss-auf-euren-hip-hop"
+album_name <- "Reneflektion"
+album_name <- "Ein-album-namens-bernd"
+album_name <- "Renevolution"
+
+```
+
+```{r}
+artist_name <- "Rodelheim-hartreim-projekt"
+album_name <- "Direkt-aus-rodelheim"
+album_name <- "Zuruck-nach-rodelheim"
+
+```
+
+```{r}
+artist_name <- "Eins-zwo"
+album_name <- "Gefahrliches-halbwissen"
+album_name <- "Sport"
+album_name <- "Zwei"
+album_name <- "Tschuldigung-weltretten-4"
+album_name <- "Discjockeys"
+
+```
+
+```{r}
+artist_name <- "Rag" # Ruhrpott AG
+album_name <- "Unter-tage"
+album_name <- "Pottential"
+```
+
+2022-07-22
+
+```{r}
+artist_name <- "257ers"
+album_name <- "Mikrokosmos" # 2016
+album_name <- "Hrnshn" # 2012
+album_name <- "Boomshakkalakka" # 2014
+album_name <- "Hokus-pokus" # 2009
+album_name <- "Hokus-pokus-spatzle-edissn" # 2009
+album_name <- "Abrakadabra" # 2019
+album_name <- "Zwen" # 2010
+album_name <- "Alpaka" # 2019
+album_name <- "Homma" # 2020
+album_name <- "Der-abfall-fallt-nicht-weit-vom-stamm-ep" # 2016
+album_name <- "Scheiss-auf-rappen" # 2008
+album_name <- "Schrottmusik-ep" # 2015
+album_name <- "Das-ende-vom-anfang" # 2022
+album_name <- "Gnu-ep" # 2019
+album_name <- "Mit-essen-spielt-man-nicht" # 2007
+album_name <- "Tracksdienichtgutgenugfurdasneuealbumwaren-ep" # 2009
+
+# !!!
+artist_name <- "275"
+album_name <- "275ers-ep" # 2020
+
+```
+
+```{r}
+artist_name <- "Alligatoah"
+album_name <- "10-jahre-alligatoah" # 2016
+album_name <- "Triebwerke" # 2013
+album_name <- "Musik-ist-keine-losung" # 2015
+album_name <- "Schlaftabletten-rotwein-v-zugabe" # 2019
+album_name <- "Schlaftabletten-rotwein-v" # 2018
+album_name <- "Schlaftabletten-rotwein-iii" # 2011
+album_name <- "Schlaftabletten-rotwein-iv" # 2011
+album_name <- "Rotz-wasser" # 2022
+album_name <- "In-gottes-namen" # 2008
+album_name <- "In-gottes-namen" # 2008
+album_name <- "Schlaftabletten-rotwein-ii" # 2007
+album_name <- "Stromausfall" # 2013
+album_name <- "Schlaftabletten-rotwein" # 2006
+album_name <- "Nicht-wecken-ep" # 2019
+album_name <- "Attntaat" # 2006
+album_name <- "Uberstunden" # 2013
+album_name <- "Goldfieber" # 2007
+album_name <- "Fremde-zungen" # 2018
+
+# !!!
+album_name <- "Anderes" # ? only track 2 has lyrics !!!
+```
+
+```{r}
+artist_name <- "Antilopen-gang"
+album_name <- "Aversion" # 2014
+album_name <- "Anarchie-und-alltag" # 2017
+album_name <- "Abwasser" # 2015
+album_name <- "Abbruch-abbruch" # 2020
+album_name <- "Antilopen-geldwasche-sampler-1" # 2021
+album_name <- "Adrenochrom" # 2020
+album_name <- "Atombombe-auf-deutschland" # 2017
+album_name <- "Antilopen-abklatsch" # 2017
+
+# !!!
+artist_name <- "Illoyal-form-antilopen-gang"
+album_name <- "Vergessen-vichy-vachy-110" # 2011
+```
+
+```{r}
+artist_name <- "Casper"
+album_name <- "Die-welt-hort-mich" # 2006
+album_name <- "Hin-zur-sonne" # 2008
+album_name <- "Xoxo" # 2011
+album_name <- "Hinterland" # 2013
+
+```
+
+```{r}
+artist_name <- "Cro"
+album_name <- "Trash" # 2006
+album_name <- "Meine-musik" # 2010
+album_name <- "Easy" # 2011
+album_name <- "Easy-x-ep" # 2021
+album_name <- "Easy-maxi-edition" # 2012
+album_name <- "Raop" # 2012
+album_name <- "Raop-5" # 2013
+album_name <- "Sunny" # 2013
+album_name <- "Melodie" # 2014
+
+```
+
+```{r}
+artist_name <- "Culcha-candela"
+album_name <- "Culcha-candela" # 2007
+album_name <- "Besteste" # 2019
+album_name <- "Das-beste" # 2010
+album_name <- "Schone-neue-welt" # 2009
+album_name <- "Feel-erfolg" # 2017
+album_name <- "Flatrate" # 2011
+album_name <- "Candelistan" # 2015
+album_name <- "Berlin-city-girl-ep" # 2010
+album_name <- "Top-ten" # 2021
+album_name <- "Next-generation" # 2005
+album_name <- "Union-verdadera" # 2004
+
+```
+
+```{r}
+artist_name <- "Deichkind"
+album_name <- "Niveau-weshalb-warum" # 2015
+album_name <- "Wer-sagt-denn-das" # 2019
+album_name <- "Befehl-von-ganz-unten" # 2012
+album_name <- "Noch-funf-minuten-mutti" # 2002
+album_name <- "Arbeit-nervt" # 2008
+album_name <- "Bitte-ziehen-sie-durch" # 2000
+album_name <- "Aufstand-im-schlaraffenland" # 2006
+
+```
+
+```{r}
+artist_name <- "Dendemann"
+album_name <- "Da-nich-fur" # 2019
+album_name <- "Die-pfutze-des-eisbergs" # 2006
+album_name <- "Vom-vintage-verweht" # 2010
+album_name <- "Therappening" # 2015
+album_name <- "Das-schweigen-dilemma" # 2003
+
+```
+
+```{r}
+artist_name <- "Eko-fresh"
+album_name <- "Legende-best-of" # 2018
+album_name <- "Eksodus" # 2013
+album_name <- "Freetracks-exclusives" # 2016
+album_name <- "Ekrem" # 2011
+album_name <- "Deutscher-traum" # 2014
+album_name <- "Abi" # 2021
+album_name <- "Ek-to-the-roots" # 2012
+album_name <- "Gheddo-maxi" # 2006
+album_name <- "hart-z-iv" # 2006
+album_name <- "Eksodus-feature-ep" # 2013
+album_name <- "Best-of-juice" # 2020
+album_name <- "Freezy" # 2016
+album_name <- "Konig-von-deutschland" # 2017
+album_name <- "Best-of-freetracks-volume-4" # 2020
+album_name <- "Fick-immer-noch-deine-story" # 2005
+album_name <- "Diss-is-it-mixtape" # 2010
+album_name <- "Ich-bin-jung-und-brauche-das-geld" # 2003
+album_name <- "Kurz-vor-freezy" # 2016
+album_name <- "Ekaveli" # 2007
+album_name <- "Jetzt-kommen-wir-wieder-auf-die-sachen" # 2009
+album_name <- "Freezy-bumaye-2-0-es-war-alles-meine-idee" # 2010
+album_name <- "Was-kostet-die-welt" # 2004
+album_name <- "Fick-deine-story" # 2005
+album_name <- "Ekaveli-ii" # 2017
+album_name <- "Bars-uber-nacht-ep" # 2015
+album_name <- "Konig-von-deutschland-maxi" # 2003
+album_name <- "Best-of-freetracks-volume-2" # 2020
+album_name <- "Ich-bin-jung-und-brauche-das-geld-maxi" # 2003
+album_name <- "Bora-lp" # 2021
+album_name <- "Ek-to-the-roots-ii" # 2017
+album_name <- "Ek-is-back-maxi" # 2006
+album_name <- "Best-of-freetracks" # 2009
+album_name <- "Freezy-bumaye-1-0-es-kann-nur-einen-geben" # 2010
+album_name <- "Jetzt-kommen-wir-auf-die-sachen" # 2001
+album_name <- "Ring-frei-maxi" # 2007
+album_name <- "Blockbustaz-willkommen-in-der-hood" # 2016
+album_name <- "Best-of-freetracks-volume-3" # 2020
+album_name <- "The-lost-tapes" # 2008
+album_name <- "Freestyles-acapellas" # 2001
+album_name <- "Ich-will-dich-maxi" # 2004
+
+# !!!
+artist_name <- "Eko-fresh-and-azra"
+album_name <- "Dunya-donuyor-die-welt-dreht-sich" # 2004
+album_name <- "Eigentlich-schon-maxi" # 2004
+
+```
+
+2022-07-23
+
+```{r}
+artist_name <- "Farid-bang"
+album_name <- "Killa" # 2014
+album_name <- "Super-genkidama" # 2020
+album_name <- "Blut" # 2016
+album_name <- "Asphalt-massaka-3" # 2015
+album_name <- "Banger-leben-kurzer" # 2011
+album_name <- "Genkidama" # 2020
+album_name <- "Torremolinos" # 2019
+album_name <- "Der-letzte-tag-deines-lebens" # 2012
+album_name <- "Nurmagomedow-ep" # 2018
+album_name <- "Asozialer-marokkaner" # 2021
+album_name <- "X" # 2021
+album_name <- "Maghreb-gang-single" # 2019
+album_name <- "Asphalt-massaka-2" # 2010
+album_name <- "Asphalt-massaka" # 2008
+album_name <- "Freetracks-exclusives" # ?
+album_name <- "Kamehameha-ep" # 2020
+album_name <- "Es-ist-soweit" # 2010
+album_name <- "Endlich-urlaub" # 2008
+album_name <- "Hustlaa-ep" # 2021
+
+# !!!
+artist_name <- "Kollegah-and-farid-bang"
+album_name <- "Jung-brutal-gutaussehend-3" # 2017
+album_name <- "Jung-brutal-gutaussehend-2" # 2013
+album_name <- "Jung-brutal-gutaussehend-xxx" # 2018
+album_name <- "Jung-brutal-gutaussehend-3-new-year-edition" # 2017
+album_name <- "185-ep" # 2017
+album_name <- "Platin-war-gestern" # 2018
+album_name <- "Jung-brutal-gutaussehend" # 2009
+album_name <- "Nafri-trap-ep-vol-1" # 2018
+
+# !!!
+artist_name <- "Farid-bang-and-capital-bra"
+album_name <- "Deutschrap-brandneu" # 2022
+
+```
+
+```{r}
+artist_name <- "Fettes-brot"
+album_name <- "Fettes-brot-fur-die-welt" # 2000
+album_name <- "Fettes-brot-lasst-gruen" # 1998
+album_name <- "3-is-ne-party" # 2013
+album_name <- "Fettes" # 2010
+album_name <- "Amnesie-16-singles-gegen-das-vergessen" # 2002
+album_name <- "Auen-top-hits-innen-geschmack" # 1996
+album_name <- "Am-wasser-gebaut" # 2005
+album_name <- "Brot" # 2010
+album_name <- "Auf-einem-auge-blod" # 1995
+album_name <- "Lovestory" # 2019
+album_name <- "Demo-tape" # 2001
+album_name <- "Strom-und-drang" # 2008
+album_name <- "Teenager-vom-mars" # 2015
+album_name <- "Mitschnacker" # 1994
+```
+
+```{r}
+artist_name <- "Fler"
+album_name <- "Trendsetter-2" # 2022
+album_name <- "Cus-junge-maxi" # 2006
+album_name <- "Blaues-blut" # 2013
+album_name <- "Conor-ep" # 2018
+album_name <- "Bewahrung-vorbei-ep" # 2016
+album_name <- "Airmax-muzik-ii" # 2011
+album_name <- "Fremd-im-eigenen-land" # 2005
+album_name <- "Pheromone-maxi" # 2013
+album_name <- "Im-bus-ganz-hinten" # 2011
+album_name <- "Ndw-2005-maxi" # 2005
+album_name <- "Hinter-blauen-augen" # 2012
+album_name <- "Trendsetter" # 2006
+album_name <- "Airmax-muzik" # 2007
+album_name <- "Warum-bist-du-so-maxi" # 2008
+album_name <- "A-g-g-r-o-nach-eigenen-regeln-maxi" # 2005
+album_name <- "90210" # 2006
+album_name <- "Deutscha-bad-boy-maxi" # 2008
+album_name <- "Papa-ist-zuruck-maxi" # 2006
+album_name <- "Check-mich-aus" # 2009
+album_name <- "Bewahrung-fur-immer-ep" # 2022
+album_name <- "Aggroberlina-ep" # 2004
+album_name <- "Neue-deutsche-welle-2" # 2014
+album_name <- "Weil-die-strae-nicht-vergisst" # 2015
+album_name <- "Keiner-kommt-klar-mit-mir" # 2015
+album_name <- "Widder" # 2021
+album_name <- "Widder-final-edition" # 2021
+album_name <- "Flersguterjunge" # 2010
+album_name <- "Fler" # 2009
+album_name <- "Vibe" # 2016
+album_name <- "Colucci" # 2019
+
+# !!!
+artist_name <- "Fler-frank-white-and-bass-sultan-hengzt"
+album_name <- "Cancel-culture-nightmare" # 2022
+# !!!
+artist_name <- "Fler-and-jalil"
+album_name <- "Epic" # 2017
+# !!!
+artist_name <- "Fler-and-silla"
+album_name <- "Sudberlin-maskulin-2" # 2012
+```
 
 ### German Rock
 
@@ -278,6 +657,29 @@ album_name <- "Casanova" # 1988
 album_name <- "Ich-will-dich-haben" # 1991
 album_name <- "Benjamin" # 1993
 album_name <- "Belcanto" # 1997
+
+# 2022-07-21
+album_name <- "Glanzlichter" # 2011
+album_name <- "Stark-wie-zwei" # 2008
+album_name <- "Galaxo-gang" # 1976
+album_name <- "Atlantic-affairs" # 2002
+album_name <- "Ball-pompos" # 1974
+album_name <- "Daumen-im-wind" # 1972
+album_name <- "Votan-wahnwitz" # 1975
+album_name <- "Lindenbergs-rock-revue" # 1978
+album_name <- "Drohnland-symphonie" # 1978
+album_name <- "Der-exzessor" # 2000
+album_name <- "Panik-Panther" # 1992
+album_name <- "Und-ewig-rauscht-die-linde" # 1996
+album_name <- "Panische-nachte" # 1977
+album_name <- "Der-detektiv-rock-revue-2" # 1979
+album_name <- "Sister-king-kong" # 1976
+album_name <- "Keule" # 1982
+album_name <- "Sundenknall" # 1985
+album_name <- "Zeitmaschine" # 1998
+album_name <- "Kosmos" # 1995
+album_name <- "Udopium-das-beste-special-edition" # 2021
+
 ```
 
 Or: 
@@ -348,11 +750,230 @@ album_name <- "They-ve-given-me-schrott-die-outtakes" # 2019
 
 ```
 
+New Code 2022-07-19
+
+```{r}
+artist_name <- "Annenmaykantereit"
+album_name <- "Annenmaykantereit-freunde-live-in-berlin" # 2016
+album_name <- "Alles-nix-konkretes" # 2016
+album_name <- "Schlagschatten" # 2018
+album_name <- "Wird-schon-irgendwie-gehen" # 2015
+album_name <- "12" # 2020
+album_name <- "Amk" # 2013
+
+```
+
+```{r}
+artist_name <- "Bela-b"
+album_name <- "Code-b" # 2009
+album_name <- "Bastard" # 2017
+album_name <- "Bye" # 2014
+album_name <- "Bingo" # 2006
+
+```
+
+```{r}
+artist_name <- "Broilers"
+album_name <- "La-vida-loca" # ?
+album_name <- "Verlierer-sehen-anders-aus" # 2001
+album_name <- "Santa-claus" # 2021
+album_name <- "Fackeln-im-sturm-arme-lichter-im-wind" # 1997
+album_name <- "Santa-muerte-live-tapes" # 2014
+album_name <- "Lofi" # 2004
+album_name <- "La-vida-loca-ep" # 2002
+album_name <- "Ruby-light-dark-e-p" # 2008
+album_name <- "Noir" # 2014
+album_name <- "Santa-muerte" # 2011
+album_name <- "Vanitas" # 2007
+album_name <- "Sic" # 2017
+album_name <- "Puro-amor" # 2021
+```
+
+```{r}
+artist_name <- "Feine-sahne-fischfilet"
+album_name <- "Sturm-dreck" # 2018
+album_name <- "Scheitern-und-verstehen" # 2012
+album_name <- "Bleiben-oder-gehen" # 2015
+album_name <- "Wut-im-bauch-trauer-im-herzen" # 2010
+```
+
+```{r}
+artist_name <- "Grossstadtgefluster"
+album_name <- "Ich-boykottiere-dich-episode-2" # 2016
+album_name <- "Trips-ticks" # 2019
+album_name <- "Fickt-euch-allee-episode-1" # 2015
+album_name <- "Alles-muss-man-selber-machen" # 2010
+album_name <- "Oh-ein-reh" # 2013
+album_name <- "Muss-laut-sein" # 2006
+album_name <- "Tiger-girl-original-motion-picture-soundtrack" # 2017
+album_name <- "Bis-einer-heult" # 2008
+album_name <- "Liebe-schmeckt-gut" # 2006
+```
+
+```{r}
+artist_name <- "Jennifer-rostock"
+album_name <- "Worst-of-jennifer-rostock" # 2017
+album_name <- "Genau-in-diesem-ton" # 2016
+album_name <- "Schlaflos" # 2014
+album_name <- "Mit-haut-und-haar" # 2009
+album_name <- "Stromlos" # ?
+album_name <- "Ins-offene-messer" # 2008
+album_name <- "Der-film" # 2009
+album_name <- "Kaleidoskop" # 2014
+album_name <- "Live-in-berlin" # 2012
+```
+
+```{r}
+artist_name <- "Kettcar"
+album_name <- "Ich-vs-wir" # 2017
+album_name <- "Du-und-wieviel-von-deinen-freunden" # 2002
+album_name <- "Von-spatzen-und-tauben-dachern-und-handen" # 2005
+album_name <- "Der-sue-duft-der-widerspruchlichkeit-wir-vs-ich" # 2019
+album_name <- "Sylt" # 2008
+album_name <- "Zwischen-den-runden" # 2012
+
+```
+
+```{r}
+artist_name <- "Killerpilze"
+album_name <- "Invasion-der-killerpilze" # 2006
+album_name <- "Mit-pauken-und-raketen" # 2007
+album_name <- "Lautonom" # 2010
+album_name <- "High" # 2016
+album_name <- "Grell" # 2013
+```
+
+```{r}
+artist_name <- "Kraftklub-and-blvth"
+album_name <- "Ein-song-reicht-blvth-version" # ?
+
+```
+
+```{r}
+artist_name <- "Kraftklub"
+album_name <- "Randale-live" # 2015
+album_name <- "Keine-nacht-fur-niemand" # 2017
+album_name <- "Mit-k" # 2012
+album_name <- "In-schwarz" # 2014
+album_name <- "Kargo" # 2022
+album_name <- "Adonis-maximus" # 2010
+album_name <- "500-k" # 2015
+album_name <- "Atomino-mania-2017" # 2017
+album_name <- "Chemie-chemie-ya-geil-und-gestort-edit" # 2017
+
+```
+
+```{r}
+artist_name <- "Madsen"
+album_name <- "Lass-die-musik-an" # 2012
+album_name <- "Frieden-im-krieg" # 2008
+album_name <- "Labyrinth" # 2010
+album_name <- "Na-gut-dann-nicht" # 2020
+album_name <- "Goodbye-logik" # 2006
+album_name <- "Wo-es-beginnt" # 2012
+album_name <- "Kompass" # 2015
+album_name <- "Madsen" # 2005
+album_name <- "Essential-5-madsen" # 2007
+album_name <- "Willkommen-bei-madsen" # 2011
+album_name <- "Lichtjahre" # 2018
+
+```
+
+```{r}
+artist_name <- "Moop-mama"
+album_name <- "M-o-o-p-topia" # 2016
+album_name <- "Ich" # 2016
+album_name <- "Das-rote-album" # 2013
+album_name <- "Deine-mutter" # 2011
+
+```
+
+```{r}
+artist_name <- "Ok-kid"
+album_name <- "Drei" # ?
+album_name <- "Woodkids" # ?
+album_name <- "Grundlos-ep" # 2014
+album_name <- "Sensation" # 2018
+album_name <- "Ok-kid" # 2013
+album_name <- "Zwei" # 2016
+album_name <- "Spotify-sessions" # 2016
+
+```
+
+```{r}
+artist_name <- "Sportfreunde-stiller"
+album_name <- "Mtv-unplugged-in-new-york-live-deluxe-version" # 2009
+album_name <- "Die-gute-seite" # 2002
+album_name <- "Ein-kompliment-ep" # 2002
+album_name <- "Sturm-stille" # 2016
+album_name <- "New-york-rio-rosenheim" # 2013
+album_name <- "You-have-to-win-zweikampf" # 2006
+album_name <- "Burli" # 2004
+album_name <- "La-bum" # 2007
+album_name <- "So-wie-einst-real-madrid" # 2000
+album_name <- "Jeder-nur-ein-x" # 2022
+album_name <- "Macht-doch-was-ihr-wollt-ich-geh-jetzt" # 1996
+album_name <- "Thontrager" # 1998
+album_name <- "Antinazibund-ep" # 2008
+album_name <- "Fast-wie-von-selbst-single" # 2000
+album_name <- "Ans-ende-denken-wir-zuletzt-ep" # 2003
+
+```
+
+```{r}
+artist_name <- "Tokio-hotel"
+album_name <- "Schrei" # 2005
+album_name <- "Zimmer-483" # 2007
+album_name <- "Humanoid-german-version" # 2009
+album_name <- "2001" # 2022
+
+```
+
+```{r}
+artist_name <- "Tomte"
+album_name <- "Buchstaben-uber-der-stadt" # 2006
+album_name <- "Hinter-all-diesen-fenstern" # 2003
+album_name <- "Heureka" # 2008
+album_name <- "Eine-sonnige-nacht" # 2005
+album_name <- "Du-weit-was-ich-meine" # 1998
+album_name <- "Blinkmuffel" # 1996
+
+```
+
+```{r}
+# Marius Müller-Westernhagen
+artist_name <- "Westernhagen"
+album_name <- "Hottentottenmusik-zugabe" # 2011
+album_name <- "Halleluja" # 1989
+album_name <- "Mit-pfefferminz-bin-ich-dein-prinz" # 1978
+album_name <- "Stinker" # 1981
+album_name <- "Westernhagen" # 1987
+album_name <- "Affentheater" # 1994
+album_name <- "Das-erste-mal" # 1975
+album_name <- "Radio-maria" # 1998
+album_name <- "Das-eine-leben" # 2022
+album_name <- "Jaja" # 1991
+album_name <- "Geiler-is-schon" # 1983
+album_name <- "Alphatier" # 2014
+album_name <- "Die-sonne-so-rot" # 1984
+album_name <- "Sekt-oder-selters" # 1980
+album_name <- "In-den-wahnsinn" # 2002
+album_name <- "Das-herz-eines-boxers" # 1982
+album_name <- "Nahaufnahme" # 2005
+album_name <- "Williamsburg" # 2009
+album_name <- "Boser-engel-ep" # 2002
+album_name <- "Black-lives-matter-single" # 2022
+
+```
+
+## Url
 
 The last mentioned album of the last mentioned artist will be scraped and downloaded. 
 
 ```{r}
-url <- paste0("https://genius.com/albums/",artist_name,"/",album_name)
+url <- paste0("https://genius.com/albums/", 
+              artist_name, "/", 
+              album_name)
 
 html_document <- read_html(url)
 html_document
@@ -434,9 +1055,11 @@ An effective way of programming is to encapsulate repeatedly used code in a spec
 
 ```{r}
 author_xpath <- "a.ayFeg"
+author_xpath <- "a.fPVhsa" # Freundeskreis FK (2022-07-19)
 title_xpath <- "h1"
 album_xpath <- ".gyOWcZ .gHBbjJ"
 body_xpath <- ".jYfhrf"
+body_xpath <- ".YYrds" # FK
 
 scrape_genius_album <- function(url) {
   
@@ -514,24 +1137,40 @@ starttime
 finishtime
 ```
 
+## Table
+
 ```{r}
 all_lyrics <- all_lyrics %>% 
   mutate(album = case_when(
     album == "" | is.na(album) ~ album_name, 
     TRUE ~ album)) %>% 
+  mutate(artist = case_when(
+    artist == "" | is.na(artist) ~ artist_name, 
+    TRUE ~ artist)) %>% 
   mutate(album = str_replace_all(album, "-", " ")) %>% 
   mutate(metadata = meta_text)
 all_lyrics
+```
+
+## Occasional filtering
+
+```{r}
+# all_lyrics <- all_lyrics %>% 
+# filter(str_detect(title, "Alligatoah interpretiert Goethes Faust"))
+
+# all_lyrics <- all_lyrics %>%
+#   mutate(released = "Released September 1, 2009") %>%
+#   unite(metadata2, c(released, metadata), sep = "\n") %>%
+#   rename(metadata = metadata2)
+
+# all_lyrics <- all_lyrics %>%
+#   filter(text != "")
 ```
 
 
 ## Save all
 
 ```{r}
-library(writexl)
-
-write_xlsx(all_lyrics, 
-           paste0("data/genius_",artist_name,"_",album_name,".xlsx"))
 saveRDS(all_lyrics, 
            paste0("data/genius_",artist_name,"_",album_name,".rds"))
 write.csv(all_lyrics, 
@@ -539,6 +1178,9 @@ write.csv(all_lyrics,
 write.csv2(all_lyrics, 
            paste0("data/genius_",artist_name,"_",album_name,
                   "_utf8",".csv"), fileEncoding = "UTF-8")
+library(writexl)
+write_xlsx(all_lyrics, 
+           paste0("data/genius_",artist_name,"_",album_name,".xlsx"))
 ```
 
 
