@@ -185,6 +185,88 @@ album_name <- "A-day-at-the-races"
 ```
 
 
+## Pop Schlager Chanson
+
+```{r}
+artist_name <- "Konstantin-wecker"
+album_name <- "Vaterland" # 2001
+album_name <- "Brecht" # 1998
+album_name <- "Brecht" # 1996
+album_name <- "Brecht" # 1993
+album_name <- "Stilles-gluck-trautes-heim" # 1989
+album_name <- "Ganz-schon-wecker" # 1988
+album_name <- "Inwendig-warm" # 1984
+album_name <- "Eine-ganze-menge-leben" # 1978
+album_name <- "Genug-ist-nicht-genug" # 1977
+album_name <- "Weckerleuchten" # 1976
+album_name <- "Ich-lebe-immer-am-strand" # 1974
+album_name <- "Die-sadopoetischen-gesange-des-konstantin-wecker" # 1973
+
+```
+
+```{r}
+artist_name <- "Hannes-wader"
+album_name <- "Noch-hier-was-ich-noch-singen-wollte" # 2022
+album_name <- "Sing" # 2015
+album_name <- "Trotz-alledem-cd1" # 2014
+album_name <- "Nah-dran" # 2012
+album_name <- "Die-liedermacher" # 2012
+album_name <- "Hannes-wader-singt-volkslieder" # 2009
+album_name <- "Neue-bekannte" # 2007
+album_name <- "Mal-angenommen" # 2006
+album_name <- "Und-es-wechseln-die-zeiten" # 2004
+album_name <- "Wunsche" # 2001
+album_name <- "Der-rebell" # 1999
+album_name <- "An-dich-hab-ich-gedacht-hannes-wader-singt-schubert" # 1997
+album_name <- "singt-bellman-liebe-schnaps-tod" # 1996
+album_name <- "Es-ist-an-der-zeit" # 1991
+album_name <- "Nie-mehr-zuruck" # 1991
+album_name <- "Nach-hamburg" # 1989
+album_name <- "Liedermacher" # 1988
+album_name <- "Liebeslieder" # 1986
+album_name <- "Glut-am-horizont" # 1985
+album_name <- "Nicht-nur-ich-allein" # 1983
+album_name <- "Wieder-unterwegs" # 1979
+album_name <- "Hannes-wader-singt-shanties" # 1978
+album_name <- "Hannes-wader-singt-arbeiterlieder" # 1977
+album_name <- "Kleines-testament" # 1976
+album_name <- "Volkssanger" # 1975
+album_name <- "Plattdeutsche-lieder" # 1974
+album_name <- "Der-rattenfanger" # 1974
+album_name <- "7-lieder" # 1972
+album_name <- "Ich-hatte-mir-noch-soviel-vorgenommen" # 1971
+album_name <- "Hannes-wader-singt" # 1969
+
+```
+
+```{r}
+artist_name <- "Herbert-gronemeyer"
+album_name <- "Wunder-immerfort-single" # 2019
+album_name <- "Tumult" # 2018
+album_name <- "Dauernd-jetzt" # 2014
+album_name <- "Schiffsverkehr" # 2011
+album_name <- "Was-muss-muss-best-of" # 2008
+album_name <- "12" # 2007
+album_name <- "Mensch" # 2002
+album_name <- "Stand-der-dinge" # 2000
+album_name <- "Bleibt-alles-anders" # 1998
+album_name <- "Fanatisch-single" # 1998
+album_name <- "Chaos" # 1993
+album_name <- "Land-unter-herb-hop" # 1993
+album_name <- "Marie-single" # 1991
+album_name <- "Luxus" # 1990
+album_name <- "O-album" # 1988
+album_name <- "Sprunge" # 1986
+album_name <- "4630-bochum" # 1984
+album_name <- "Gemischte-gefuhle" # 1983
+album_name <- "Total-egal" # 1982
+album_name <- "Zwo" # 1980
+album_name <- "Gronemeyer" # 1979
+album_name <- "Zeit-dass-sich-was-dreht" # 2006
+
+```
+
+
 ### German Rap
 
 https://www.dw.com/en/10-pioneers-of-german-hip-hop/g-18888518
@@ -632,6 +714,352 @@ artist_name <- "Fler-and-silla"
 album_name <- "Sudberlin-maskulin-2" # 2012
 ```
 
+2022-07-25
+
+```{r}
+artist_name <- "Funf-sterne-deluxe"
+album_name <- "Sillium" # 1998
+album_name <- "Flash" # 2017
+album_name <- "Neo-now" # 2000
+
+```
+
+```{r}
+artist_name <- "Genetikk"
+album_name <- "Fukk-genetikk" # 2016
+album_name <- "D-n-a" # 2016
+album_name <- "Achter-tag" # 2015
+album_name <- "Voodoozirkus" # 2012
+album_name <- "Foetus-10-years-anniversary-edition" # 2020
+album_name <- "Foetus" # 2010
+album_name <- "Liebs-oder-lass-es-ep" # 2013
+album_name <- "Mdna-6" # 2021
+album_name <- "Mdna" # 2021
+album_name <- "Outtathisworld-radio-show-vol-1" # 2019
+album_name <- "Y-a-l-a" # 2018
+album_name <- "D-n-a-2" # 2018
+album_name <- "Y-a-l-a-butterfly-re-edition" # 2019
+album_name <- "Outtathisworld-radio-show-vol-2" # 2022
+
+```
+
+```{r}
+artist_name <- "Jan-delay"
+album_name <- "Earth-wind-feiern" # 2021
+album_name <- "Mercedes-dance" # 2006
+album_name <- "Wir-kinder-vom-bahnhof-soul" # 2009
+album_name <- "Searching-for-the-jan-soul-rebels" # 2001
+album_name <- "Hammer-michel" # 2014
+
+```
+
+```{r}
+artist_name <- "Kiz"
+album_name <- "Bohse-enkelz" # 2006
+album_name <- "Das-rap-deutschland-kettensagen-massaker" # 2005
+album_name <- "Hahnenkampf" # 2007
+album_name <- "Sexismus-gegen-rechts" # 2007
+album_name <- "Urlaub-furs-gehirn" # 2011
+album_name <- "Hurra-die-welt-geht-unter" # 2015
+
+```
+
+2022-07-26
+
+```{r}
+artist_name <- "Kay-one"
+album_name <- "Rich-kidz" # 2013
+album_name <- "J-g-u-d-z-s-jung-genug-um-drauf-zu-scheissen" # 2015
+album_name <- "Prince-of-belvedair" # 2012
+album_name <- "Der-junge-von-damals" # 2016
+album_name <- "Kenneth-allein-zu-haus" # 2010
+album_name <- "Louis-louis-maxi" # 2017
+album_name <- "V-i-p-single" # 2014
+album_name <- "Beautiful-ep" # 2014
+album_name <- "Der-junge-von-damals-black-edition-ep" # 2016
+album_name <- "Das-ist-lil-kay" # 2006
+album_name <- "Makers-gonna-make" # 2018
+
+# !!!
+artist_name <- "Bushido-chakuza-and-kay-one"
+album_name <- "Alles-gute-kommt-von-unten-maxi" # 2007
+
+```
+
+```{r}
+artist_name <- "Kollegah"
+album_name <- "Kollegah" # 2008
+album_name <- "Legacy-best-of"
+album_name <- "king"
+album_name <- "Bossaura"
+album_name <- "Zuhaltertape-volume-4" # 2015
+album_name <- "Mondfinsternis-ep" # 2011
+album_name <- "Imperator" # 2016
+album_name <- "Zuhaltertape-volume-3" # 2009
+album_name <- "Zuhaltertape-volume-5" # 2021
+album_name <- "Hoodtape-volume-1-x-mas-edition" # 2010
+album_name <- "Zuhaltertape-x-mas-edition" # 2005
+album_name <- "Alphagene" # 2007
+album_name <- "Zuhaltertape-vol-1-download-edition" # 2005
+album_name <- "Hoodtape-volume-3" # 2018
+album_name <- "Boss-der-bosse" # 2006
+album_name <- "Hoodtape-volume-1" # 2010
+album_name <- "Hoodtape-volume-2" # 2016
+album_name <- "Golden-era-tourtape" # 2017
+album_name <- "Rba-reimliga-battle-arena" # 2005
+album_name <- "Free-spirit" # 2022
+album_name <- "Lyrik-lounge-ep-2021" # 2021
+album_name <- "Ghettoglamour-street-ep" # 2019
+album_name <- "Lost-tapes" # 2015
+album_name <- "Freestyles" # ? 2019?
+album_name <- "Playlists" # ?
+album_name <- "Das-ist-alpha" # 2018
+album_name <- "Bossaura-street-ep" # 2011
+album_name <- "Alphagene-ii" # 2019
+
+# !!!
+artist_name <- "Kollegah-and-boz"
+album_name <- "Rba-kollegah-vs-boz-1-battle" # 2004
+album_name <- "Rba-kollegah-vs-boz-2-battle" # 2004
+# !!!
+artist_name <- "Asche-and-kollegah"
+album_name <- "Natural-born-killas" # 2021
+# !!!
+artist_name <- "Bosshafte-beats-and-kollegah"
+album_name <- "Freetracks-compilation" # 2018
+album_name <- "Lyrik-lounge-compilation" # 2017
+album_name <- "Street-stories-ep" # 2017
+# !!!
+artist_name <- "Seyed-and-kollegah"
+album_name <- "Tagteam-tape" # 2016
+album_name <- "Tagteam-tape-2" # 2017
+
+```
+
+2022-07-27
+
+```{r}
+artist_name <- "Kool-savas"
+album_name <- "The-best-of-kool-savas" # 2008
+album_name <- "Martyrer" # 2014
+album_name <- "Aura" # 2011
+album_name <- "Essahdamus" # 2016
+album_name <- "Aghori" # 2021
+album_name <- "Die-john-bello-story" # 2005
+album_name <- "Die-john-bello-story-iii" # 2010
+album_name <- "Die-john-bello-story-ii" # 2008
+album_name <- "Kks" # 2019
+album_name <- "Die-john-bello-story-ii-brainwash-edition" # 2009
+album_name <- "Tot-oder-lebendig" # 2007
+album_name <- "Der-beste-tag-meines-lebens" # 2002
+album_name <- "Rap-genius" # 2015
+album_name <- "Lms-maxi" # 1999
+album_name <- "Der-beste-tag-meines-lebens-maxi" # 2003
+album_name <- "Optik-takeover" # 2006
+album_name <- "Techno-pilot" # 2010
+album_name <- "Was-hat-s-a-v-da-vor-ep" # 2009
+album_name <- "Rap-genius-ii" # 2019
+album_name <- "Die-besten-tage-sind-gezahlt" # 2004
+album_name <- "Till-ab-joe-maxi" # 2002
+album_name <- "Euer-bester-freund" # 2004
+album_name <- "Haus-boot-ep" # 2001
+album_name <- "Optik-anthem" # 2003
+album_name <- "Savas-goes-hollywood" # 2004
+album_name <- "Die-besten-tage-sind-gezahlt-maxi" # 2004
+album_name <- "Wer-hatz-erfunden" # 2006
+album_name <- "Uberoptik-tour-2002" # 2002
+# album_name <- "Freetracks-exklusivtitel" # ?
+
+# !!!
+artist_name <- "Savas-and-sido"
+album_name <- "Royal-bunker" # 2017
+album_name <- "Wasch-den-thron" # 2018
+
+# !!!
+artist_name <- "Kool-savas-and-azad"
+album_name <- "One" # 2005
+album_name <- "All-4-one-maxi" # 2005
+album_name <- "Monstershit" # 2005
+album_name <- "Guck-my-man-maxi" # 2005
+
+```
+
+2022-07-28
+
+```{r}
+artist_name <- "Marsimoto"
+album_name <- "Ring-der-nebelungen" # 2015
+album_name <- "Gruner-samt" # 2012
+album_name <- "Verde" # 2018
+album_name <- "Halloziehnation" # 2006
+album_name <- "Green-juice-ep" # 2011
+album_name <- "Zu-zweit-allein" # 20008
+
+#!!! Parodie auf Marsimoto
+artist_name <- "Marimoto"
+album_name <- "Das-falsche-original" # 2015
+
+```
+
+```{r}
+artist_name <- "Massive-tone"
+album_name <- "Mt3" # 2002
+album_name <- "Mt3-special-tour-edition" # 2002
+album_name <- "Kopfnicker" # 1996
+album_name <- "Uberfall" # 1999
+album_name <- "Zuruck-in-die-zukunft" # 2005
+album_name <- "Dichter-in-stuttgart" # 1995
+
+```
+
+```{r}
+artist_name <- "Max-herre"
+album_name <- "Max-herre" # 2004
+album_name <- "Mtv-unplugged-kahedi-radio-show" # 2013
+album_name <- "Hallo-welt" # 2012
+album_name <- "kahed-radio-live-juice-exclusive-ep" # 2015
+album_name <- "Athen" # 2019
+album_name <- "Ein-geschenkter-tag" # 2009
+album_name <- "Das-wenigste-single" # 2019
+
+```
+
+```{r}
+artist_name <- "Peter-fox"
+album_name <- "Stadtaffe" # 2008
+album_name <- "Schwarz-zu-blau-ep" # 2009
+album_name <- "Alles-neu-ep" # 2008
+album_name <- "Haus-am-see-ep" # 2008
+
+# !!!
+artist_name <- "Peter-fox-and-cold-steel"
+album_name <- "Live-aus-berlin" # 2009
+
+```
+
+```{r}
+artist_name <- "Prinz-pi"
+album_name <- "Das-prinz-ip-prinz-pi-vol-1" # 2007
+album_name <- "Kompass-ohne-norden-live-auf-kurs-nach-hause" # 2014
+album_name <- "Rebell-ohne-grund" # 2011
+album_name <- "Im-westen-nix-neues" # 2016
+album_name <- "Nichts-war-umsonst" # 2017
+album_name <- "Achse-des-schonen-juice-ep" # 2011
+album_name <- "Teenage-mutant-horror-show-ii" # 2009
+album_name <- "Du-bist-ep" # 2011
+album_name <- "Innenseiten-eines-auenseiters-ep" # 2015
+album_name <- "Porno-privat" # 1999
+album_name <- "Wahre-legenden" # 2020
+album_name <- "Neopunk" # 2008
+album_name <- "Donnerwetter" # 2006
+album_name <- "Blackbookcd-2" # 2003
+album_name <- "Rap-mich-am-a" # 2007
+album_name <- "Illuminati-ep" # 2010
+album_name <- "Zeitlos" # 2007
+album_name <- "Zeit-ist-geld" # 2005
+album_name <- "Radiumreaktion" # 2002
+album_name <- "Geschriebene-geschichte-1998-2005" # 2005
+album_name <- "Der-herr-der-dinge" # 2006
+album_name <- "Guess-who-s-back-on-the-streets" # 2005
+album_name <- "Sneakerking" # 2013
+album_name <- "Blackbook-cd-2-jung-schon-stylisch" # 2002
+album_name <- "Hallo-musik" # 2011
+album_name <- "Radium-ep" # 2001
+album_name <- "Picknick-ep" # 2002
+album_name <- "Instinkt" # 2006
+album_name <- "2030-single" # 2009
+album_name <- "Lasst-die-puppen-tanzen" # 2006
+album_name <- "Freetracks-exclusives" # 2007
+album_name <- "Rona-freestyles" # 2021
+
+# !!!
+artist_name <- "Prinz-pi-and-separate"
+album_name <- "1-liga" # 2004
+
+```
+
+2022-07-29
+
+```{r}
+artist_name <- "Samy-deluxe"
+album_name <- "Samy-deluxe" # 2001
+album_name <- "Schwarzweiss" # 2011
+album_name <- "Weck-mich-auf-ep" # 2001
+album_name <- "Beruhmte-letzte-worte" # 2016
+album_name <- "Mannlich" # 2014
+album_name <- "Dis-wo-ich-herkomm" # 2009
+album_name <- "Up2date-ep" # 2011
+album_name <- "Hochkultur" # 2019
+album_name <- "Perlen-vor-die-saue" # 2013
+album_name <- "Baus-kingskis-late-night-sessions-juice-exclusive-ep" # 2011
+album_name <- "One-take-wonder-zu-beruhmte-letzte-worte" # 2016
+album_name <- "Verdammtnochma" # 2004
+album_name <- "Deluxe-edition" # 2017
+album_name <- "Deluxe-records-lets-go" # 2005
+album_name <- "Der-letzte-tanz" # 2009
+album_name <- "Liarkasten-ep" # 2021
+album_name <- "The-big-baus-of-the-nauf" # 2006
+album_name <- "Deluxe-von-kopf-bis-fu" # 2006
+album_name <- "So-deluxe-so-glorious" # 2005
+album_name <- "Gute-alte-zeit" # 2014
+album_name <- "Generation-ep" # 2006
+album_name <- "International-love-single" # 2001
+
+# !!!
+artist_name <- "Samy-deluxe-and-headliners"
+album_name <- "Hamburgs-finest-exclusive-mixtape-vol-1" # 2003
+
+```
+
+```{r}
+artist_name <- "Seeed"
+album_name <- "Music-monks" # 2003
+
+```
+
+```{r}
+artist_name <- "Summer-cem"
+album_name <- "Feierabend" # 2010
+
+```
+
+```{r}
+artist_name <- "Sido"
+album_name <- "Ich-keine-maske" # 2019
+album_name <- "Kronjuwelen" # 2018
+album_name <- "Das-goldene-album" # 2016
+album_name <- "Vi" # 2015
+album_name <- "30-11-80" # 2013
+album_name <- "Beste" # 2012
+album_name <- "Blutzbrudaz-die-mukke-zum-film" # 2011
+album_name <- "Mtv-unplugged-live-ausm-mv" # 2010
+album_name <- "Aggro-berlin" # 2009
+album_name <- "Hey-du-single" # 2009
+album_name <- "Beweg-dein-arsch-maxi" # 2009
+album_name <- "Carmen-maxi" # 2008
+album_name <- "Ich-und-meine-maske" # 2008
+album_name <- "Ich-und-meine-maske-premium-edition" # 2008
+album_name <- "Augen-auf-halt-dein-maul-maxi" # 2008
+album_name <- "Schlechtes-vorbild-maxi" # 2007
+album_name <- "Eine-hand-wascht-die-andere-das-feature-album" # 2007
+album_name <- "Ein-teil-von-mir-maxi" # 2007
+album_name <- "Ich" # 2006
+album_name <- "Strassenjunge-maxi" # 2006
+album_name <- "Maske-x" # 2005
+album_name <- "Mama-ist-stolz-deluxe" # 2005
+album_name <- "Arschf-cksong-maxi" # 2004
+album_name <- "Fuffies-im-club-maxi" # 2004
+album_name <- "Maske" # 2004
+album_name <- "Mein-block-maxi" # 2004
+album_name <- "Freetracks-exclusives" # 2012
+
+# Missing lyrics
+# album_name <- "Roter-samt" # 2018
+# album_name <- "Die-goldenen-remixes" # 2016
+
+```
+
+
 ### German Rock
 
 Or: 
@@ -966,6 +1394,215 @@ album_name <- "Black-lives-matter-single" # 2022
 
 ```
 
+2022-08-03
+
+```{r}
+artist_name <- "Bohse-onkelz"
+album_name <- "Bohse-onkelz" # 2020
+album_name <- "Memento" # 2016
+album_name <- "E-i-n-s" # 1996
+album_name <- "Der-nette-mann" # 1984
+album_name <- "Viva-los-tioz" # 1998
+album_name <- "Kneipenterroristen" # 1988
+album_name <- "Wir-ham-noch-lange-nicht-genug" # 1991
+album_name <- "Hier-sind-die-onkelz" # 1995
+album_name <- "Wei" # 1993
+album_name <- "Es-ist-soweit" # 1990
+album_name <- "Dopamin" # 2002
+album_name <- "Heilige-lieder" # 1992
+album_name <- "Ein-boses-marchen-aus-tausend-finsteren-nachten" # 2000
+album_name <- "Schwarz" # 1993
+album_name <- "Adios" # 2004
+album_name <- "Onkelz-wie-wir" # 1987
+album_name <- "Mexico" # 1985
+album_name <- "Lugenmarsch" # 1989
+album_name <- "Bose-menschen-bose-lieder" # 1985
+
+```
+
+```{r}
+artist_name <- "Novalis"
+album_name <- "Novalis" # 1975
+album_name <- "Brandung" # 1977
+album_name <- "Sommerabend" # 1976
+album_name <- "Wer-schmetterlinge-lachen-hort" # 1983
+album_name <- "Vielleicht-bist-du-ein-clown" # 1978
+album_name <- "Augenblicke" # 1980
+album_name <- "Flossenengel" # 1979
+album_name <- "Neumond" # 1982
+
+```
+
+```{r}
+artist_name <- "Subway-to-sally"
+album_name <- "Kreuzfeuer" # 2009
+album_name <- "Nord-nord-ost" # 2005
+album_name <- "Hey" # 2019
+album_name <- "Schwarz-in-schwarz" # 2011
+album_name <- "Herzblut" # 2001
+album_name <- "Hochzeit" # 1999
+album_name <- "Mitgift" # 2014
+album_name <- "Foppt-den-damon" # 1996
+album_name <- "Bannkreis" # 1997
+album_name <- "Engelskrieger" # 2003
+album_name <- "Bastard" # 2007
+album_name <- "Mcmxcv" # 1995
+album_name <- "Album-1994" # 1994
+
+```
+
+Koelsch-Rock
+
+```{r}
+artist_name <- "BAP"
+album_name <- "Affjetaut" # 1980
+
+```
+
+```{r}
+artist_name <- "freiwild"
+album_name <- "20-jahre-wir-schaffen-deutsch-land" # 2021
+album_name <- "Scheiss-auf-2020-single" # 2020
+album_name <- "Corona-tape-ii" # 2020
+album_name <- "Corona-quarantane-tape" # 2020
+album_name <- "Still-ii-leise-sturmisch-herzergreifend" # 2019
+album_name <- "Unsere-lieblingslieder" # 2019
+album_name <- "Rivalen-und-rebellen" # 2018
+album_name <- "Antiwillkommen-single" # 2017
+album_name <- "15-jahre-deutschrock-skandale" # 2016
+album_name <- "Opposition" # 2015
+album_name <- "Still" # 2013
+album_name <- "Feinde-deiner-Feinde" # 2012
+album_name <- "Gegengift" # 2010
+album_name <- "Hart-am-wind" # 2009
+album_name <- "Gegen-alles-gegen-nichts" # 2008
+album_name <- "Mitten-ins-herz" # 2006
+album_name <- "Mensch-oder-gott" # 2004
+album_name <- "Wo-die-sonne-wieder-lacht" # 2003
+album_name <- "Eines-tages" # 2002
+
+```
+
+```{r}
+artist_name <- "Puhdys"
+album_name <- "Heilige-nachte" # 2013
+album_name <- "Es-war-schon" # 2012
+album_name <- "Abenteuer-das-jubilaumsalbum" # 2009
+album_name <- "Dezembernachte" # 2006
+album_name <- "Alles-hat-seine-zeit" # 2005
+album_name <- "36-lieder-aus-36-jahren" # 2005
+album_name <- "Raritaten-volume-2" # 2004
+album_name <- "Undercover" # 2003
+album_name <- "Zufrieden" # 2001
+album_name <- "Dezembertage" # 2001
+album_name <- "Wilder-frieden" # 1999
+album_name <- "20-hits-aus-30-jahren" # 1999
+album_name <- "Hey-wir-wolln-die-Eisbarn-sehn-single" # 1997
+album_name <- "Frei-wie-die-geier" # 1997
+album_name <- "Zeiten-andern-sich" # 1994
+album_name <- "Raritaten-besondere-hits" # 1994
+album_name <- "Wie-ein-engel" # 1992
+album_name <- "Neue-helden" # 1989
+album_name <- "20-jahre-puhdys-jubilaumsalbum" # 1989
+album_name <- "Ohne-schminke" # 1985
+album_name <- "Das-buch" # 1984
+album_name <- "Computer-karriere" # 1983
+album_name <- "Schattenreiter" # 1981
+album_name <- "Hei-wie-schnee" # 1980
+album_name <- "10-wilde-jahre-1969-1979" # 1978
+album_name <- "Perlenfischer" # 1977
+album_name <- "Sturmvogel" # 1976
+album_name <- "puhdys-2" # 1975
+album_name <- "Die-puhdys" # 1974
+
+```
+
+```{r}
+artist_name <- "Rockwasser"
+album_name <- "Cest-la-vie" # 2022
+album_name <- "Hier-heute-jetzt" # 2018
+album_name <- "Immer-noch-nicht-satt" # 2015
+album_name <- "Was-wir-waren-was-wir-sind" # 2015
+album_name <- "In-all-den-jahren" # 2010
+album_name <- "O-r-i-g-i-n-a-l" # 2007
+
+```
+
+```{r}
+artist_name <- "Silly"
+album_name <- "Wutfanger" # 2016
+album_name <- "Kopf-an-kopf" # 2013
+album_name <- "Alles-rot" # 2010
+album_name <- "Paradies" # 1996
+album_name <- "Hurensohne" # 1994
+album_name <- "Februar" # 1989
+album_name <- "Bataillon-d-amour" # 1986
+album_name <- "Liebeswalzer" # 1985
+album_name <- "Mont-klamott" # 1983
+
+```
+
+```{r}
+artist_name <- "Torfrock"
+album_name <- "Meisterstucke" # 2014
+album_name <- "Wild-thing" # 2000
+album_name <- "Die-bagaluten-fete" # 1998
+album_name <- "Rockerkuddl" # 1996
+album_name <- "Die-wikinger" # 1995
+album_name <- "Rata-ta-zong" # 1994
+album_name <- "Aufe-beinharte-tour" # 1991
+album_name <- "Beinhart-geht-das-ab-hier" # 1991
+album_name <- "Mein-gott-sind-wir-begabt" # 1991
+album_name <- "Alle-an-die-ruder" # 1991
+album_name <- "Torfrock-oder-watt" # 1990
+album_name <- "Torfmoorholmer-hitparade" # 1983
+album_name <- "Dat-matscht-so-schon" # 1977
+
+album_name <- "Einigkeit-und-blech-und-freizeit" # 2001
+album_name <- "Volle-granate-renate" # 1978
+
+```
+
+2022-08-04
+
+```{r}
+artist_name <- "Stoppok"
+album_name <- "Auf-sendung-solo" # 2013
+album_name <- "Bla-bla-nonstop" # 2003
+album_name <- "W-e-l-l-n-e-s-s" # 2002
+album_name <- "Grundvergnugen" # 2001
+album_name <- "Neues-aus-la-la-land" # 1999
+album_name <- "Mit-sicherheit" # 1997
+album_name <- "Happy-end-im-la-la-land" # 1993
+
+
+```
+
+```{r}
+artist_name <- "Element-of-crime"
+album_name <- "Schafe-monster-und-mause" # 2018
+album_name <- "Lieblingsfarben-und-tiere" # 2014
+album_name <- "Immer-da-wo-du-bist-bin-ich-nie" # 2009
+album_name <- "Mittelpunkt-der-welt" # 2005
+album_name <- "Romantik" # 2001
+album_name <- "Psycho" # 1999
+album_name <- "Die-schonen-rosen" # 1996
+album_name <- "An-einem-sonntag-im-april" # 1994
+album_name <- "Weies-papier" # 1993
+album_name <- "Dicte-moi-ta-loi" # 1993
+album_name <- "Damals-hinterm-mond" # 1991
+album_name <- "The-ballad-of-jimmy-johnny" # 1989
+album_name <- "Essentials" # 2005
+
+```
+
+```{r}
+artist_name <- "Ulla-meinecke"
+album_name <- "Wenn-schon-nicht-fur-immer-dann-wenigstens-fur-ewig" # 1989
+
+```
+
+
 ## Url
 
 The last mentioned album of the last mentioned artist will be scraped and downloaded. 
@@ -1155,16 +1792,16 @@ all_lyrics
 ## Occasional filtering
 
 ```{r}
-# all_lyrics <- all_lyrics %>% 
-# filter(str_detect(title, "Alligatoah interpretiert Goethes Faust"))
+# all_lyrics <- all_lyrics %>%
+# filter(str_detect(title, "Zeit"))
 
 # all_lyrics <- all_lyrics %>%
-#   mutate(released = "Released September 1, 2009") %>%
+#   mutate(released = "Released September 30, 2006") %>%
 #   unite(metadata2, c(released, metadata), sep = "\n") %>%
 #   rename(metadata = metadata2)
 
-# all_lyrics <- all_lyrics %>%
-#   filter(text != "")
+all_lyrics <- all_lyrics %>%
+  filter(text != "")
 ```
 
 

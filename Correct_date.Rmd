@@ -1,0 +1,99 @@
+---
+title: "rettung"
+author: "Teodor Petrič"
+date: "2022-08-03"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Packages
+
+```{r}
+library(tidyverse)
+```
+
+
+## List files & remove date
+
+Remove the wrong string in the metadata column of all relevant files. 
+
+```{r}
+myf <- list.files(path = "ddd/", 
+           pattern = "*.rds$", 
+           full.names = T, 
+           recursive = F
+           )
+
+for(i in 1:length(myf)){
+kaputt <- read_rds(myf[i])
+richtig <- kaputt %>% 
+  mutate(metadata = str_remove(metadata, 
+                               "Released September 30, 2012\n"))
+saveRDS(richtig, myf[i])
+}
+```
+
+Transform into other file formats:
+
+```{r}
+myf <- list.files(path = "ddd/", 
+           pattern = "*.rds$", 
+           full.names = T, 
+           recursive = F
+           )
+
+for(i in 1:length(myf)){
+input <- read_rds(myf[i])
+pathname <- str_remove(myf[i], "\\.rds$")
+# saveRDS(input, paste0(pathname,".rds"))
+write_csv(input, paste0(pathname,".csv"))
+write_csv2(input, paste0(pathname,"_utf8",".csv"))
+writexl::write_xlsx(input, paste0(pathname,".xlsx"))
+}
+```
+
+```{r eval=FALSE, include=FALSE}
+myf <- list.files(path = "ddd/", 
+           pattern = "*.xlsx$", 
+           full.names = T, 
+           recursive = F
+           )
+
+for(i in 1:length(myf)){
+input <- readxl::read_xlsx(myf[i])
+pathname <- str_remove(myf[i], "\\.xlsx$")
+saveRDS(input, paste0(pathname,".rds"))
+write_csv(input, paste0(pathname,".csv"))
+write_csv2(input, paste0(pathname,"_utf8",".csv"))
+# writexl::write_xlsx(input, paste0(pathname,".xlsx"))
+}
+```
+
+
+## Special case:
+
+```{r}
+x <- read_rds("ddd/genius_Torfrock_Volle-granate-renate.rds")
+x <- x %>% mutate(metadata = str_remove(metadata, 
+                               "Released September 30, 2001\n"))
+saveRDS(x, "ddd/genius_Torfrock_Volle-granate-renate.rds")
+
+x <- read_csv("ddd/genius_Torfrock_Volle-granate-renate.csv")
+x <- x %>% mutate(metadata = str_remove(metadata, 
+                               "Released September 30, 2001\n"))
+write_csv(x, "ddd/genius_Torfrock_Volle-granate-renate.csv")
+
+x <- read_csv2("ddd/genius_Torfrock_Volle-granate-renate_utf8.csv")
+x <- x %>% mutate(metadata = str_remove(metadata, 
+                               "Released September 30, 2001\n"))
+write_csv2(x, "ddd/genius_Torfrock_Volle-granate-renate_utf8.csv")
+
+x <- readxl::read_xlsx("ddd/genius_Torfrock_Volle-granate-renate.xlsx")
+x <- x %>% mutate(metadata = str_remove(metadata, 
+                               "Released September 30, 2001\n"))
+writexl::write_xlsx(x, "ddd/genius_Torfrock_Volle-granate-renate.xlsx")
+```
+
